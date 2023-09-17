@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import DetailContainer from "./components/DetailContainer";
+import NavBar from "./components/NavBar/NavBar"
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <AppBar position="static" sx={{ mb: 4 }}>
+        <Toolbar>
+          <Typography variant="h6">My App</Typography>
+          <Button color="inherit">Login</Button>
+        </Toolbar>
+      </AppBar> */}
+      <NavBar/>
+      <DetailContainer/>
+     
     </div>
   );
-}
+};
 
 export default App;
+
+
+
+// {/* <List>
+//                     <ListItem>
+//                       <ListItemText primary="Status:" />
+//                       <ListItemIcon>
+//                         <span className="label label-primary">Active</span>
+//                       </ListItemIcon>
+//                     </ListItem>
+//                   </List> */}
+//                   {/* ... More content */}

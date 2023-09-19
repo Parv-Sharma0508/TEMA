@@ -58,7 +58,7 @@ export default function ResolutionSteps() {
             >
               {step.label}
             </StepLabel>
-            {/* <StepContent>
+            <StepContent>
               <Typography>{step.description}</Typography>
               <Box sx={{ mb: 2 }}>
                 <div>
@@ -78,7 +78,7 @@ export default function ResolutionSteps() {
                   </Button>
                 </div>
               </Box>
-            </StepContent> */}
+            </StepContent>
           </Step>
         ))}
       </Stepper>
